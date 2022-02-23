@@ -41,7 +41,6 @@ CisController.DeconstructPerson = async (req, res) => {
     res.json({message: 'person in deconstruction!'})
 }
 
-
 CisController.BuryPerson = async (req, res) => {
     await CisPerson.findByIdAndDelete(req.params.id);   
     res.json({message: 'person has colgado los guayos :/'})
